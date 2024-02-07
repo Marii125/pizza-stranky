@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/**********reusable(znovupouzitelne)******************/
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+/**********header******************/
+header {
+    background: linear-gradient(rgb(0,0,0,0.2), rgb(0,0,0,0.4)), url(img/pizza.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+#logo img{
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+    position: relative;
+    top: 6px;
+}
+
+nav ul {
+    float: right;
+    margin-top: -90px;
+    
+}
+nav ul li{
+   display: inline-block;
+    margin-left: 15px;
+}
+
+nav ul li a{
+   color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 1px solid transparent; 
+/*    tady musime dat transparent*/
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    border-bottom: 1px solid #e0a43f;
+    transition: border-bottom 0.5s;
+}
+
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text {
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
+    border: 1px solid #e0a43f;
+    border-radius: 10px;
+    padding: 4px 8px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e0a43f;
+}
+
+.btn-full:hover, 
+.btn-full:active {
+    transition: background 1.2s;
+    background-color: #d9921a;
+}
+
+.btn-empty:hover,
+.btn-empty:visited {
+    transition: background 1.2s;
+    background-color: #d9921a;
+}

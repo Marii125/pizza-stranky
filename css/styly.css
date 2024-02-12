@@ -38,6 +38,7 @@ header {
     background: linear-gradient(rgb(0,0,0,0.2), rgb(0,0,0,0.4)), url(../img/pizza.jpg);
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 
@@ -163,7 +164,8 @@ nav ul li a:active {
 /**************  reference *************/
 
 .reference {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(../img/pizza.jpg)
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(../img/pizza.jpg);
+    background-attachment: fixed;
 }
 
 .reference h2 {
@@ -243,17 +245,83 @@ width: 100%;
 /*contact-fom*/
 .contact-form input {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     display: block;
     margin: 0 auto;
+    margin: 12px auto;
+    padding: 7px 9px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .contact-form textarea {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     display: block;
     margin: 0 auto;
-    
+    margin: 12px auto;
+    padding: 7px 9px;
+     border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+
+input[type="submit"] {
+    background-color: #d9921a;
+    color: #fff;
+     max-width: 100px; 
+}
+
+input[type="submit"]:hover {
+    background-color: #d9921a;
+    color: #fff;
+     max-width: 100px; 
+    background-color:  #e7b35c;
+    color: #000;
+    transition: background-color 0.5s;
+}
+
+
+
+/*****************************************
+****************************
+******footer*/
+.footer-page {
+    background-color: #d9921a;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.social {
+    margin: 10px 0;
+    text-align: center;
+   
+}
+
+
+.social p {
+    display: inline;
+    margin-left: 10px;
+}
+
+
+.social a:link,
+.social a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social a:hover,
+.social a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-text {
+    text-align: center;
+    margin: 10px 0;
 }
 
 

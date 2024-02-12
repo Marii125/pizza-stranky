@@ -1,6 +1,53 @@
+/*X-Small	< 576px
+Small	≥ 576px
+Medium	≥ 768px
+Large	≥ 992px
+Extra large	≥ 1200px
+Extra extra large	≥ 1400px
+
+
+576 a min
+768 a min
+992 a min
+1200 a min*/
+
+
+
+
 @media only screen and (max-width: 1199px) {
     .row {
         width: 100%;
+        
+    }
+    
+    .photo-segment {
+        margin-left: 10px;
+        margin-right: 10px;
     }
     
 }
+
+
+@media only screen and (max-width: 1074px) {
+    
+    
+    .photo-segment li {
+        height: auto;
+    }
+    
+    .photo-segment img:hover {
+       transform: scale(1.15);
+        opacity: 1;
+    }
+    
+}
+
+@media only screen and (max-width: 991px) {
+    .photo-segment {
+      
+    }
+    
+   
+    
+}
+

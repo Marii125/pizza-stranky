@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="styly.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/styly.css">
     <link rel="stylesheet" href="others/grid.css">
+    <link rel="stylesheet" href="css/query.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </head>
 
 <body>
@@ -97,7 +100,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis condimentum augue id magna semper rutrum. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Ut tempus purus at lorem. Nullam rhoncus aliquam metus. Suspendisse sagittis ultrices augue. Proin mattis lacinia justo. Suspendisse nisl. Nulla quis diam. Integer vulputate sem a nibh rutrum consequat.</p>
                     
                     <div class="photo-name">
-                    <img  src="img/download.jpg"/>
+                    <img  src="img/download.jpg"class="clearfix"/>
                     <p>Nina D.</p>
                     </div>
                     
@@ -108,7 +111,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis condimentum augue id magna semper rutrum. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Ut tempus purus at lorem. Nullam rhoncus aliquam metus. Suspendisse sagittis ultrices augue. Proin mattis lacinia justo. Suspendisse nisl. Nulla quis diam. Integer vulputate sem a nibh rutrum consequat.</p>
                     
                  <div class="photo-name">
-                    <img  src="img/download.jpg"/>
+                    <img  src="img/download.jpg"class="clearfix"/>
                     <p>Nina D.</p>
                     </div>
                 </div>
@@ -117,14 +120,53 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis condimentum augue id magna semper rutrum. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Ut tempus purus at lorem. Nullam rhoncus aliquam metus. Suspendisse sagittis ultrices augue. Proin mattis lacinia justo. Suspendisse nisl. Nulla quis diam. Integer vulputate sem a nibh rutrum consequat.</p>
                     
                      <div class="photo-name">
-                    <img  src="img/download.jpg"/>
+                    <img  src="img/download.jpg"class="clearfix"/>
                     <p>Nina D.</p>
                     </div>
                 </div>
                 
             </div>
-            
         </section>
+        
+        <section class="photo-gallery">
+             <div class="heading-main">
+               <h2>Zážitky našich zákazníků</h2>
+            </div>
+            
+            <div class="photos row">
+                <ul class="photo-segment">
+                    <li class="col span-1-of-2"><a href="img/pizza1.jpg" data-lightbox="my-gallery" data-title="pizza se sýrem"><img src="img/pizza1.jpg"/></a></li>
+                    <li class="col span-1-of-2"><a href="img/pizza2.jpg" data-lightbox="my-gallery"><img src="img/pizza2.jpg"/></a></li>    
+                </ul>
+                
+                 <ul class="photo-segment">
+                    <li class="col span-1-of-2"><a href="img/pizza3.jpg" data-lightbox="my-gallery"><img src="img/pizza3.jpg"/></a></li>
+                    <li class="col span-1-of-2"><a href="img/pizza4.jpg" data-lightbox="my-gallery"><img src="img/pizza4.jpg"/></a></li>    
+                </ul>
+                
+                <ul class="photo-segment">
+                    <li class="col span-1-of-2"><a href="img/pizza5.jpg" data-lightbox="my-gallery" data-title="pizza se sýrem"><img src="img/pizza5.jpg"/></a></li>
+                    <li class="col span-1-of-2"><a href="img/pizza6.jpg" data-lightbox="my-gallery"><img src="img/pizza6.jpg"/></a></li>    
+                </ul>
+            </div> 
+        </section>
+        
+        <section>
+            <div class="heading-main">
+               <h2>Zeptejte se</h2>
+            </div>
+            
+            <form class="contact-form row">
+                <input type="text" placeholder="jméno"/>
+                <input type="text" placeholder="Přijmení"/>
+                <input type="email" placeholder="email"/>
+                <textarea></textarea>
+                <input type="submit" value="submit" placeholder="text"/>
+                
+                
+            </form>
+        </section>
+        
     </main>
 </body>
 </html>

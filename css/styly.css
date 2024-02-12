@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/**********reusable(znovupouzitelne)*****************
+*******************************
+*********
+*****/
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+
+}
+
+.heading-main h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #e0a43f;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+/**********header******************/
+header {
+    background: linear-gradient(rgb(0,0,0,0.2), rgb(0,0,0,0.4)), url(../img/pizza.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+#logo img{
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+    position: relative;
+    top: 6px;
+}
+
+nav ul {
+    float: right;
+    margin-top: -90px;
+    
+}
+nav ul li{
+   display: inline-block;
+    margin-left: 15px;
+}
+
+nav ul li a{
+   color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 1px solid transparent; 
+/*    tady musime dat transparent*/
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    border-bottom: 1px solid #e0a43f;
+    transition: border-bottom 0.5s;
+}
+
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text {
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
+    border: 1px solid #e0a43f;
+    border-radius: 10px;
+    padding: 4px 8px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e0a43f;
+}
+
+.btn-full:hover, 
+.btn-full:active {
+    transition: background 1.2s;
+    background-color: #d9921a;
+}
+
+.btn-empty:hover,
+.btn-empty:visited {
+    transition: background 1.2s;
+    background-color: #d9921a;
+}
+
+
+
+
+/************ about us - pizza example****************/
+.pizza-example img {
+    width: 100%;
+    max-width: 560px; /***sem davam 560px protoze jsem to zkusila v konzoli a dala jsem tam jakoby zapis pro responzivitu img akorat ne 400px ale 560px aby to vypadalo dorbe(mezery mezi dvouma obrazky)***********/
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 6px 7px #000;
+   
+}
+
+/************our pizza- pizza info****************/
+
+.pizza-info img{
+    width: 100%;
+     max-width: 560px;
+     height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 6px 7px #000;
+}
+
+
+.text-pizza {
+    margin-bottom: 20px;
+}
+
+.text-pizza div {
+    width: 23px;
+    height: 23px;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    float: left;
+    
+}
+
+.text-pizza p {
+    margin-left: 57px;
+}
+
+
+/**************  reference *************/
+
+.reference {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(../img/pizza.jpg)
+}
+
+.reference h2 {
+    color: #fff;
+    padding-top: 30px;
+}
+
+
+.reference h2:after{
+    border-bottom: 2px solid #fff;
+}
+
+
+/*pozor tady kdybychom dali header-main h2 misto reference h2 nebo  header-main h2:after tak by nam to zmenilo vsude a my chceme jen zmenit ten spodni radek v reference!!
+pozor i kdyz jsme dali jen .reference h2 {} tak se nam to automaticky zmenilo jak je .header-main h2!!!!staci ze to ma spolecny h2 bez ty tridy (.heading-main)
+ale pak jsme prave zmenili aby to nemel ten vzhled toho .header-main h2 na >>>
+.reference h2:after{
+    border-bottom: 2px solid #fff; a tim padem jen to reference ma bilou caru pod
+*/
+
+
+.one-reference {
+  color: #fff;
+    font-size: 20px;
+    
+}
+
+.one-reference p {
+    font-style: italic;
+}
+
+.photo-name {
+    margin-top: 10px;
+    margin-bottom: 10pxpx;
+}
+
+.photo-name p{
+    padding: 22px;
+    margin-left: 50px;
+    font-style: normal;
+}
+
+.photo-name img {
+width: 100%;
+  max-width: 50px;
+  height: auto;
+    border-radius: 50%;
+    float: left;
+    
+}
+
+
+
+/*photo-galery - photo-segment*/
+.photo-segment li {
+    background-color: #000;
+    overflow: hidden;
+    height: 370px
+}
+.photo-segment img {
+    width: 100%;
+  max-width: 600px;
+  height: auto;
+    opacity: 0.5;
+    transform: scale(1.15);
+   
+}
+
+.photo-segment img:hover {
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(1);
+    opacity: 1;
+   
+}
+
+
+/*contact-fom*/
+.contact-form input {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-form textarea {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+
+/**************stop floating *************/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

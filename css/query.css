@@ -20,17 +20,64 @@ Extra extra large	≥ 1400px
         
     }
     
+    
+/*    photo-gallery*/
+    
     .photo-segment {
         margin-left: 10px;
         margin-right: 10px;
     }
     
+    
+/*    our-pizza*/
+      
+/*
+
+    
+    
+    
+    
+    .pizza-info .span-1-of-2 {
+        width: 100%;
+    }
+*/
+    
+    
+    .span-sm-1-of-1 {    
+        width: 100%;
+        text-align: center;
+    }
+    
+  /* ************************************ udelala jsem si u stejne urovne jako je  trida span-1-of-2 jinou tridu s nazvem .span-sm-1-of-1 a dala jsem tomu  width:100% b query; kdyz jsem dala tomu obrazku div s vlastni tridou a dala width:100%; tak to nefungovalo protoze ten div daval 100% z toho span-1-of-2 coz ma nakej 49% takze ten div dělá 100 procent ze 49 procent. takze musime k tomu span-1-of-2 v html pridat jinou tridu (ve stejny urovni) a timpadem uz to bude fungovat********************************************************************************/
+    
+    
+    
+    
+    
+    
+    
+    
+    .text-pizza p {
+        padding-top: 10px;
+    }
+    
+    
+    
+    .span-sm-1-of-1-text {
+        width: 90%;
+    }
+    
 }
+
+
+
+
+
 
 
 @media only screen and (max-width: 1074px) {
     
-    
+/*    photo-gallery*/
     .photo-segment li {
         height: auto;
     }
@@ -43,11 +90,49 @@ Extra extra large	≥ 1400px
 }
 
 @media only screen and (max-width: 991px) {
-    .photo-segment {
-      
+    
+    /*    reference*/
+    .col.span-1-of-3.one-reference  { /*vem zaroven class dal class atd*/
+        width: 48%;
+        margin-left: 10px;
+        
     }
     
-   
+    .one-reference:nth-child(3) {  /*to znamena vem z one-reference to treti v pozadi tu treti referenci*/
+        display: none;
+    } 
+    
     
 }
 
+@media only screen and (max-width: 767px) {
+    
+    
+/*    reference*/
+    .col.span-1-of-3.one-reference {
+        width: 100%;
+        
+    }
+    
+    .photo-name {
+        float: right;
+        margin-right: 10px;
+
+    }
+    
+    .one-reference p {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .col.span-1-of-3.one-reference {
+        width: 100%;
+       
+    }
+    
+    .one-reference p {
+        margin-right: 10px;
+    }
+     
+}

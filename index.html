@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,178 +11,198 @@
     <link rel="stylesheet" href="others/grid.css">
     <link rel="stylesheet" href="css/query.css">
     <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    <!--    pouzivani jQuery
+to prcni script je ze se naucil jQuery a ten druhej script je odkud to bere(zalozili jsme si soubor script.js ve slozce js-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="nav-bar row">
-            <div id="logo">
-                <img src="img/sta%C5%BEen%C3%BD%20soubor.png"/>
-            </div>
-        
-            <nav class="">
-                <ul>
-                    <li><a href="#">jedna</a></li>
-                    <li><a href="#">dva</a></li>
-                    <li><a href="#">tri</a></li>
-                    <li><a href="#">ctyri</a></li>
-                    <li><a href="#">pet</a></li>
+
+        <div class="nav-background">
+            <nav>
+                <ul class="">
+                    <li><a href="#" class="jq--scroll-our-pizza">naše pizza</a></li>
+                    <li><a href="#" class="jq--scroll-about-pizza">o naší pizze</a></li>
+                    <li><a href="#">reference</a></li>
+                    <li><a href="#">fotogalerie</a></li>
+                    <li><a href="#">kontakt</a></li>
                 </ul>
             </nav>
+        
+
+            <nav>
+                <div class="mobile-nav-icon jq--nav-icon">
+                <img class="jq--image-hamburger" src="img/jj2.jpg" />
+                </div>
+            </nav>
         </div>
-        
-        
+
+
+        <div class="nav-bar row">
+            <div id="logo">
+                <img src="img/sta%C5%BEen%C3%BD%20soubor.png" />
+            </div>
+
+        </div>
+
+
+
         <div class="header-text">
             <h1>Roztančíme Vaše chuťové buňky</h1>
-            <a href="#" class="btn btn-full">První</a>
-            <a href="#" class="btn btn-empty">Druhé</a>
+            <a href="#" class="btn btn-full jq--scroll-btn-first">První</a>
+            <a href="#" class="btn btn-empty jq--scroll-btn-second">Druhé</a>
         </div>
     </header>
-    
+
     <main>
-        <section class="about-us row">
-            <div class="heading-main">
-               <h2>Naše pizza</h2>
+        <section class="about-us row jq--our-pizza">
+            <div class="heading-main ">
+                <h2>Naše pizza</h2>
             </div>
-            
+
             <div class="pizza-example">
                 <div class="col span-1-of-2">
-                    <img src="img/pizza1.jpg"/>
+                    <img src="img/pizza1.jpg" />
                 </div>
-                
+
                 <div class="col span-1-of-2">
-                    <img src="img/pizza2.jpg"/>
+                    <img src="img/pizza2.jpg" />
                 </div>
-                
+
             </div>
         </section>
-        
-        <section class="our-pizza row">
+
+        <section class="our-pizza row jq--about-pizza">
             <div class="heading-main">
-               <h2>O naší pizze</h2>
+                <h2>O naší pizze</h2>
             </div>
-            
+
             <div class="pizza-info">
                 <div class="col span-1-of-2 span-sm-1-of-1">
-                   <div class="pizza-ukazka">    <!--tenhle div nebude fungovat pokud v query budeme chtit dat obrazek na width:100%;-->
-                    <img src="img/pizza3.jpg"/>
+                    <div class="pizza-ukazka">
+                        <!--tenhle div nebude fungovat pokud v query budeme chtit dat obrazek na width:100%;-->
+                        <img src="img/pizza3.jpg" />
                     </div>
                 </div>
                 <div class="col span-1-of-2 span-sm-1-of-1-text">
                     <div class="text-pizza clearfix">
                         <div>1</div>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh dignissim sagittis. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Morbi imperdiet, mauris ac.</p>  
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh dignissim sagittis. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Morbi imperdiet, mauris ac.</p>
                     </div>
-                    
-                     <div class="text-pizza clearfix">
+
+                    <div class="text-pizza clearfix">
                         <div>2</div>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh dignissim sagittis. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Morbi imperdiet, mauris ac.</p>  
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh dignissim sagittis. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Morbi imperdiet, mauris ac.</p>
                     </div>
-                    
-                     <div class="text-pizza clearfix">
+
+                    <div class="text-pizza clearfix">
                         <div>3</div>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh dignissim sagittis. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Morbi imperdiet, mauris ac.</p>  
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh dignissim sagittis. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Morbi imperdiet, mauris ac.</p>
                     </div>
-                    
-                     <div class="text-pizza clearfix">
+
+                    <div class="text-pizza clearfix">
                         <div>4</div>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh dignissim sagittis. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Morbi imperdiet, mauris ac.</p>  
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh dignissim sagittis. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Morbi imperdiet, mauris ac.</p>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
-        
-        <section class="reference">
-             <div class="heading-main">
-               <h2>Co o nas rekli zakaznici</h2>
+
+        <section class="reference jq--reference">
+            <div class="heading-main">
+                <h2>Co o nas rekli zakaznici</h2>
             </div>
-            
-            
+
+
             <div class="customer-reference row">
                 <div class="col span-1-of-3 one-reference">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis condimentum augue id magna semper rutrum. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Ut tempus purus at lorem. Nullam rhoncus aliquam metus. Suspendisse sagittis ultrices augue. Proin mattis lacinia justo. Suspendisse nisl. Nulla quis diam. Integer vulputate sem a nibh rutrum consequat.</p>
-                    
+
                     <div class="photo-name">
-                    <img  src="img/download.jpg"class="clearfix"/>
-                    <p>Nina D.</p>
+                        <img src="img/download.jpg" class="clearfix" />
+                        <p>Nina D.</p>
                     </div>
-                    
-                    
+
+
                 </div>
-                
+
                 <div class="col span-1-of-3 one-reference">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis condimentum augue id magna semper rutrum. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Ut tempus purus at lorem. Nullam rhoncus aliquam metus. Suspendisse sagittis ultrices augue. Proin mattis lacinia justo. Suspendisse nisl. Nulla quis diam. Integer vulputate sem a nibh rutrum consequat.</p>
-                    
-                 <div class="photo-name">
-                    <img  src="img/download.jpg"class="clearfix"/>
-                    <p>Nina D.</p>
+
+                    <div class="photo-name">
+                        <img src="img/download.jpg" class="clearfix" />
+                        <p>Nina D.</p>
                     </div>
                 </div>
-                
+
                 <div class="col span-1-of-3 one-reference">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis condimentum augue id magna semper rutrum. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Ut tempus purus at lorem. Nullam rhoncus aliquam metus. Suspendisse sagittis ultrices augue. Proin mattis lacinia justo. Suspendisse nisl. Nulla quis diam. Integer vulputate sem a nibh rutrum consequat.</p>
-                    
-                     <div class="photo-name">
-                    <img  src="img/download.jpg"class="clearfix"/>
-                    <p>Nina D.</p>
+
+                    <div class="photo-name">
+                        <img src="img/download.jpg" class="clearfix" />
+                        <p>Nina D.</p>
                     </div>
                 </div>
-                
+
             </div>
         </section>
-        
+
         <section class="photo-gallery">
-             <div class="heading-main">
-               <h2>Zážitky našich zákazníků</h2>
+            <div class="heading-main">
+                <h2>Zážitky našich zákazníků</h2>
             </div>
-            
+
             <div class="photos row">
                 <ul class="photo-segment">
-                    <li class="col span-1-of-2"><a href="img/pizza1.jpg" data-lightbox="my-gallery" data-title="pizza se sýrem"><img src="img/pizza1.jpg"/></a></li>
-                    <li class="col span-1-of-2"><a href="img/pizza2.jpg" data-lightbox="my-gallery"><img src="img/pizza2.jpg"/></a></li>    
+                    <li class="col span-1-of-2"><a href="img/pizza1.jpg" data-lightbox="my-gallery" data-title="pizza se sýrem"><img src="img/pizza1.jpg" /></a></li>
+                    <li class="col span-1-of-2"><a href="img/pizza2.jpg" data-lightbox="my-gallery"><img src="img/pizza2.jpg" /></a></li>
                 </ul>
-                
-                 <ul class="photo-segment">
-                    <li class="col span-1-of-2"><a href="img/pizza3.jpg" data-lightbox="my-gallery"><img src="img/pizza3.jpg"/></a></li>
-                    <li class="col span-1-of-2"><a href="img/pizza4.jpg" data-lightbox="my-gallery"><img src="img/pizza4.jpg"/></a></li>    
-                </ul>
-                
+
                 <ul class="photo-segment">
-                    <li class="col span-1-of-2"><a href="img/pizza5.jpg" data-lightbox="my-gallery" data-title="pizza se sýrem"><img src="img/pizza5.jpg"/></a></li>
-                    <li class="col span-1-of-2"><a href="img/pizza6.jpg" data-lightbox="my-gallery"><img src="img/pizza6.jpg"/></a></li>    
+                    <li class="col span-1-of-2"><a href="img/pizza3.jpg" data-lightbox="my-gallery"><img src="img/pizza3.jpg" /></a></li>
+                    <li class="col span-1-of-2"><a href="img/pizza4.jpg" data-lightbox="my-gallery"><img src="img/pizza4.jpg" /></a></li>
                 </ul>
-            </div> 
+
+                <ul class="photo-segment">
+                    <li class="col span-1-of-2"><a href="img/pizza5.jpg" data-lightbox="my-gallery" data-title="pizza se sýrem"><img src="img/pizza5.jpg" /></a></li>
+                    <li class="col span-1-of-2"><a href="img/pizza6.jpg" data-lightbox="my-gallery"><img src="img/pizza6.jpg" /></a></li>
+                </ul>
+            </div>
         </section>
-        
+
         <section>
             <div class="heading-main">
-               <h2>Zeptejte se</h2>
+                <h2>Zeptejte se</h2>
             </div>
-            
+
             <form class="contact-form row">
-                <input type="text" placeholder="jméno"/>
-                <input type="text" placeholder="Přijmení"/>
-                <input type="email" placeholder="email"/>
+                <input type="text" placeholder="jméno" />
+                <input type="text" placeholder="Přijmení" />
+                <input type="email" placeholder="email" />
                 <textarea cols="20" rows="10" placeholder="text"></textarea>
-                <input type="submit" value="submit"/>
+                <input type="submit" value="submit" />
             </form>
         </section>
     </main>
-    
+
     <footer class="footer-page">
         <div class="row">
             <div class="social">
-                <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p> 
+                <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
                 <p href="#"><a>Instagram</a></p>
             </div>
-        <div class="footer-text">
-            Copywrite &copy; 2024 Pizza company. Všechna práva vyhrazena.
+            <div class="footer-text">
+                Copywrite &copy; 2024 Pizza company. Všechna práva vyhrazena.
+            </div>
         </div>
-        </div>
-        
-        
+
+
     </footer>
-    
+
 </body>
+
 </html>

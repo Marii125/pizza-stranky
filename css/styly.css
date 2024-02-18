@@ -15,10 +15,11 @@
 
 .heading-main h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 55px;
     font-size: 30px;
 
 }
+
 
 .heading-main h2:after {
     content: "";
@@ -30,7 +31,12 @@
 }
 
 
+/*preklikavani--vetsi background*/
 
+.nav-background.aktivni {
+    height: 175px;
+    
+}
 
 
 /**********header******************/
@@ -48,12 +54,29 @@ header {
   height: auto;
     position: relative;
     top: 6px;
+    z-index: 200;
+    
 }
+
+
 
 nav ul {
     float: right;
-    margin-top: -90px;
+    position: fixed;
+    z-index: 300;
+    top: 20px; 
+    right: 20%;
     
+
+}
+
+
+.nav-background {
+    width: 100%;
+    position: fixed;
+    height: 56px;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100;
 }
 nav ul li{
    display: inline-block;
@@ -82,7 +105,7 @@ nav ul li a:active {
     transform: translate(-50%,-50%);
 }
 
-.header-text {
+.header-text h1 {
     color: #fff;
     font-size: 35px;
     text-transform: uppercase;
@@ -116,8 +139,20 @@ nav ul li a:active {
     transition: background 1.2s;
     background-color: #d9921a;
 }
+/*
 
+mobile-navigation
+*/
 
+.mobile-nav-icon img{
+     width: 100%;
+    max-width: 45px;
+    height: auto;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: none;
+}
 
 
 /************ about us - pizza example****************/

@@ -53,10 +53,6 @@ Extra extra large	≥ 1400px
     
     
     
-    
-    
-    
-    
     .text-pizza p {
         padding-top: 10px;
     }
@@ -66,8 +62,55 @@ Extra extra large	≥ 1400px
     .span-sm-1-of-1-text {
         width: 90%;
     }
+ 
     
-}
+/*about-us - pizza-example   */
+
+    .pizza-example {
+        margin-right: 10px;
+        
+    }
+    
+/*   zmena menu /hamburger*/
+    nav ul li {
+        display: block;
+    } 
+    
+    
+    nav ul  {
+        display: none;
+    }
+    
+    
+    .nav-background {
+        background-color: rgba(0,0,0,0.7);
+        position: fixed;
+    }
+    
+    
+
+/*
+    .mobile-nav-back {
+        background-color: rgba(0,0,0,0.7);
+        height: 160px;
+        width: 100%;
+        position: fixed;
+        display: none;
+    }
+*/
+
+    
+    .mobile-nav-icon img {
+        display: inline-block;
+        z-index: 200;
+        position: fixed;
+        right: 2%;
+    
+    }
+    
+    
+    
+    }
 
 
 
@@ -102,8 +145,40 @@ Extra extra large	≥ 1400px
         display: none;
     } 
     
+/*
+    
+zmena u header (hamburger menu)
+*/
+    
+    
+    
     
 }
+
+@media only screen and (max-width: 991px) {
+   /*    header-text*/
+    
+    .header-text {
+        width: 100%;
+        text-align: center;
+       
+    }
+    
+    .header-text h1{
+         margin-left: 10px;
+        margin-left: 30px;
+    } 
+    
+    .btn {
+        display: block;
+        width: 38%;
+        
+        margin: 5px auto;
+    }
+}
+
+
+
 
 @media only screen and (max-width: 767px) {
     
@@ -123,6 +198,13 @@ Extra extra large	≥ 1400px
     .one-reference p {
         margin-right: 10px;
     }
+    
+    
+/*    header-text*/
+    
+
+    
+
 }
 
 @media only screen and (max-width: 575px) {
